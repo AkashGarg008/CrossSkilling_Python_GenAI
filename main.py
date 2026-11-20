@@ -59,7 +59,7 @@ async def get_weather(city: str = Query(..., min_length=1, description="City nam
             geocoding_url = "https://geocoding-api.open-meteo.com/v1/search"
             geocoding_params = {
                 "name": city,
-                "count": 10,
+                "count": 1,
                 "language": "en",
                 "format": "json"
             }
